@@ -39,3 +39,27 @@
         width:70%;
     }
 }
+@media (max-width:1050px) {
+    .card2 {
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+    margin-top: 30px;
+    }
+    .big-card {
+        width: 100%;
+    }
+    .small-card {
+        width: 100%;
+    }
+}
+@media (min-width:0px) {
+    .cards {
+        display: flex;
+        gap:30px;
+        flex-direction: column;
+    }
+    .card {
+        width:100%;
+    }
+}
