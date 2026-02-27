@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #040c1a;
+    font-family: sans-serif;
+}
+.dashboard {
+  display: flex;
+  height: 100vh;
+  gap:1rem;
+  color:white;
+}
+
+.sidebar {
+  width: 250px;
+  background-color:#151923;
+  color: white;
+  position: fixed;
+  height: 100vh;
+  flex-shrink: 0;
+  border: 1px solid #252a37;
+}
+.sidebar h2 {
+    padding:1rem;
+}
+.sidebar hr {
+    margin-bottom: 20px;
+    border: 1px solid #252a37;
+}
+nav {
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color:#818898;
+    transition: 0.4s;
+}
+nav a:hover {
+    color:orange;
+    text-decoration: underline;
+}
+.content {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  flex-direction: column;
+  display: flex;
+  margin-left: 270px;
+}
+.intro {
+    margin-bottom: 20px;
+}
+.cards {
+    display:flex;
+    gap:30px;
+}
+.card {
+    border-radius: 12px;
+    border: 1px solid #252a37;
+    color:orange;
+    height: 150px;
+    width: 400px;
+    padding: 20px;
+    background-color:#151923;
+    transition: 0.4s;
+}
+.card2 {
+    display: flex;
+    gap:30px;
+    margin-top: 30px;
+}
+.small-card {
+    border-radius: 12px;
+    border: 1px solid #252a37;
+    color:white;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    background-color:#151923;
+    transition: 0.4s;
+}
+.small-card span {
+    color:#818898;
+}
+.small-card h4 {
+    margin-bottom: 20px;
+}
+.list-flex{
+    display: flex;
+}
+.green {
+    height: 10px;
+    width: 10px;
+    background: green;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.blue {
+    height: 10px;
+    width: 10px;
+    background: #2bc6ff;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.yellow {
+    height: 10px;
+    width: 10px;
+    background: yellow;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.gray {
+    height: 10px;
+    width: 10px;
+    background: #818898;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.small-card li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+.small-card ul li {
+    display: flex;
+}
+.big-card {
+    border-radius: 12px;
+    border: 1px solid #252a37;
+    color:orange;
+    height: 350px;
+    width: 600px;
+    padding: 20px;
+    background-color:#151923;
+    transition: 0.4s;
+}
+.card h6 {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:#818898;
+}
+.card-flex {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card h2 {
+    color:white;
+    margin-bottom: 10px;
+}
+.card span {
+    background-color: #f99e1f1a;
+    padding:5px;
+    border-radius: 7px;
+    color: orange;
+}
+.last-card {
+    margin-top: 30px;
+    border-radius: 12px;
+    border: 1px solid #252a37;
+    color:orange;
+    height: 400px;
+    width: 1040px;
+    padding: 20px;
+    background-color:#151923;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.project-flex {
+    display: flex;
+    gap:50px;
+}
+table {
+    width: 700px;
+}
+th {
+    color:#818898;
+    text-align: left;
+}
+tbody td {
+  border-bottom: 2px solid #1e2736;
+}
+.intro h3 {
+    margin-bottom: 20px;
+    color:white;
+}
+.intro p {
+    color: #818898;
+}
+.card p {
+    color:green;
+}
+.card .plain {
+    color: #818898;
+}
+.white {
+    color: white;
+}
+.greys {
+    color:#818898;
+}
+.bar-72 {
+    width:100px;
+    background:linear-gradient( to right,orange 72%, hsl(220 15% 15%) 28%);
+    height:8px;
+    border-radius: 20px;
+}
+.bar-90 {
+    width:100px;
+    background:linear-gradient( to right,orange 90%, hsl(220 15% 15%) 10%);
+    height:8px;
+    border-radius: 20px;
+}
+.bar-45 {
+    width:100px;
+    background:linear-gradient( to right,orange 45%, hsl(220 15% 15%) 55%);
+    height:8px;
+    border-radius: 20px;
+}
+.bar-15 {
+    width:100px;
+    background:linear-gradient( to right,orange 15%, hsl(220 15% 15%) 85%);
+    height:8px;
+    border-radius: 20px;
+}
+table {
+    width: 100%;
+    height:300px;
+}
+.high {
+    background-color: #7c1d1d;
+    color:red;
+    border-radius: 20px;
+    width:50px;
+    display: flex;
+    justify-content: center;
+}
+.medium {
+    background-color: rgba(255, 255, 0, 0.212);
+    color:yellow;
+    border-radius: 20px;
+    width:70px;
+    display: flex;
+    justify-content: center;
+}
+.low {
+    background-color: rgba(0, 128, 0, 0.171);
+    color:green;
+    border-radius: 20px;
+    width:45px;
+    display: flex;
+    justify-content: center;
+}
+.bar-flex {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}

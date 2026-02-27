@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <h2>Leonardo</h2>
+        <hr>
+        <nav>
+          <a href="">Dashboard</a>
+          <a href="">Projects</a>
+          <a href="">Analytics</a>
+          <a href="">Team</a>
+          <a href="">Notification</a>
+          <a href="">Settings</a>
+        </nav>
+      </aside>
+      <div class="content">
+        <div class="intro">
+          <h3>Good day Leonardo</h3>
+          <p>Here's what's happening across your projects today.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-flex">
+              <h6>Revenue</h6>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </span>
+            </div>
+            <h2>$24,580</h2>
+            <p>+12.5% from last month</p>
+          </div>
+          <div class="card">
+            <div class="card-flex">
+              <h6>Active Users</h6>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-4 w-4 text-primary"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </span>
+            </div>
+            <h2>1,429</h2>
+            <p>+8.2% from last month</p>
+          </div>
+          <div class="card">
+            <div class="card-flex">
+              <h6>Projects</h6>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-kanban h-4 w-4 text-primary"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path><path d="M8 10v4"></path><path d="M12 10v2"></path><path d="M16 10v6"></path></svg>
+              </span>
+            </div>
+            <h2>12</h2>
+            <p class="plain">3 due this week</p>
+          </div>
+          <div class="card">
+            <div class="card-flex">
+              <h6>Growth</h6>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-4 w-4 text-primary"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+              </span>
+            </div>
+            <h2>23.1%</h2>
+            <p>+2.4% from last month</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="big-card">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="small-card">
+            <h4>Recent Activity</h4>
+            <ul>
+              <li>
+                <div class="green"></div>
+               <p>Deployed frontend v2.4.1<br> <span>2 min ago</span></p>
+              </li>
+              <li>
+                <div class="blue"></div>
+                <p>Merged PR <span>#342 — Auth refactor<br>18 min ago</span></p>
+              </li>
+              <li>
+                <div class="yellow"></div>
+                <p>Commented on <span>Issue #89<br>1 hr ago</span></p>
+              </li>
+              <li>
+              <div class="yellow"></div>
+              <p>Created branch  <span>feat/dashboard-v2<br>3 hrs ago</span></p>
+            </li>
+             <li>
+              <div class="gray"></div>
+              <p>Closed issue <span>#78 — Mobile layout<br>5 hrs  ago</span></p>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div class="last-card">
+          <h4>Active Projects</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Status</th>
+                <th>Progress</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td class="white">Website Redesign</td>
+                <td class="greys">In progress</td>
+                <td><div class="bar-flex"><div class="bar-72"></div><p>72%</p></div></td>
+                <td><p class="high">High</p></td>
+              </tr>
+              <tr>
+                <td class="white">Mobile App v3</td>
+                <td class="greys">	Review</td>
+                <td><div class="bar-flex"><div class="bar-90"></div><p>90%</p></div></td>
+                <td><p class="medium">Medium</p></td>
+              </tr>
+              <tr>
+                <td class="white">API Migration</td>
+                <td class="greys">	In Progress</td>
+                <td><div class="bar-flex"><div class="bar-45"></div><p>45%</p></div></td>
+                <td><p class="high">High</p></td>
+              </tr>
+              <tr>
+                <td class="white">Analytics Dashboard</td>
+                <td class="greys">	Planning</td>
+                <td><div class="bar-flex"><div class="bar-15"></div><p>15%</p></div></td>
+                <td><p class="low">Low</p></td>
+              </tr>
+            </tbody>
+          </table>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</html>

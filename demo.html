@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>beans</title>
+    </head>
+    <style>.progress-bar {
+  width: 150px;
+  height: 6px;
+  background: #2a3447;      /* dark grey track */
+  border-radius: 999px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.progress-bar .fill {
+  height: 100%;
+  background: #ff8c00;      /* orange fill */
+  border-radius: 999px;
+}
+.badge {
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge.high   { color: #fc4f4f; background: transparent; }
+.badge.medium { color: #ff8c00; background: #2a1f0a; border: 1px solid #ff8c00; }
+.badge.low    { color: #48bb78; background: transparent; }</style>
+    <body>
+        <div class="projects-card">
+  <h3>Active Projects</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Status</th>
+        <th>Progress</th>
+        <th>Priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Website Redesign</td>
+        <td>In Progress</td>
+        <td>
+          <div class="progress-bar">
+            <div class="fill" style="width: 72%"></div>
+          </div>
+          72%
+        </td>
+        <td><span class="badge high">High</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    </body>
+</html>
