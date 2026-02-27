@@ -1,0 +1,41 @@
+@media (min-width: 1280px) {
+    .cards {
+        display: flex;
+        gap:30px;
+    }
+    .card {
+        height: 150px;
+        width: 700px;
+    }
+    .big-card {
+        border-radius: 12px;
+        border: 1px solid #252a37;
+        color:orange;
+        height: 350px;
+        width: 2000px;
+        padding: 20px;
+        background-color:#151923;
+        transition: 0.4s;
+    }
+    #myChart {
+        height:30px;
+    }
+    .last-card {
+        width:2330px;
+    }
+}
+@media (max-width:2484px) {
+    .big-card {
+        width:90%
+    }
+}
+@media (max-width:2391px) {
+    .big-card {
+        width:85%;
+    }
+}
+@media (max-width:1618px) {
+    .big-card {
+        width:70%;
+    }
+}

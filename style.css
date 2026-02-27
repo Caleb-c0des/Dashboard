@@ -60,6 +60,10 @@ nav a:hover {
     display:flex;
     gap:30px;
 }
+.last-cards {
+    display:flex;
+    gap:30px;
+}
 .card {
     border-radius: 12px;
     border: 1px solid #252a37;
