@@ -40,10 +40,16 @@ nav a {
     text-decoration: none;
     color:#818898;
     transition: 0.4s;
+    display: flex;
+    gap:5px;
+    align-items: center;
 }
 nav a:hover {
     color:orange;
     text-decoration: underline;
+}
+nav a svg {
+    color :orange;
 }
 .content {
   flex: 1;
