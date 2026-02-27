@@ -268,3 +268,41 @@ table {
     align-items: center;
     gap:10px;
 }
+.theme-button {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.last-hr {
+     margin-top: 200px;
+}
+.moon{
+    display:none;
+    color:#818898;
+}
+.moon {
+    color:black;
+}
+button p {
+    font-size: small;
+    color:white;
+}
+[data-theme="light"] .sun  { display: none; }
+[data-theme="light"] .moon { display: inline;color:black; }
+[data-theme="light"] body { background: rgba(255, 255, 255, 0.801);}
+[data-theme="light"] h3 { color:black; }
+[data-theme="light"] .sidebar {background-color: white; border: 1px solid #e2e4e9;}
+[data-theme="light"] .sidebar h2 {color:black}
+[data-theme="light"] .small-card p {color:black}
+[data-theme="light"] td {color:black}
+[data-theme="light"] hr {border: 1px solid #e2e4e9;}
+[data-theme="light"] .card {background-color: #ffffff;border:1px solid #e2e4e9}
+[data-theme="light"] .small-card {background-color: #ffffff;border:1px solid #e2e4e9}
+[data-theme="light"] .big-card {background-color: #ffffff;border:1px solid #e2e4e9}
+[data-theme="light"] .last-card {background-color: #ffffff;border:1px solid #e2e4e9}

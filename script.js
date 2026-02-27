@@ -1,3 +1,12 @@
+function Theme() {
+  const html = document.documentElement;
+
+  if (html.dataset.theme === "light") {
+    html.dataset.theme = "dark";
+  } else {
+    html.dataset.theme = "light";
+  }
+}
 const ctx = document.getElementById('myChart').getContext('2d');
 
     const gradient = ctx.createLinearGradient(0, 0, 0, 350);
@@ -27,7 +36,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
         plugins: {
           legend: { display: false },
           tooltip: {
-            backgroundColor: '#1a2332',
+            backgroundColor: '#1a233250',
             borderColor: '#ff8c00',
             borderWidth: 1,
             titleColor: '#ff8c00',
@@ -52,3 +61,4 @@ const ctx = document.getElementById('myChart').getContext('2d');
         }
       }
     });
+
