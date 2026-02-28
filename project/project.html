@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="./media-query.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+    <link rel="icon" type="img/png" href="./images/fca6231c-e4df-42a8-8406-04b41808a6d1.png">
+  </head>
+  <body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Leonardo</h2>
+            <hr>
+            <nav>
+            <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-dashboard h-4 w-4"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>Dashboard</a>
+            <a href="../project/project.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-kanban h-4 w-4"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path><path d="M8 10v4"></path><path d="M12 10v2"></path><path d="M16 10v6"></path></svg>Projects</a>
+            <a href="">Analytics</a>
+            <a href="">Team</a>
+            <a href="">Notification</a>
+            <a href="">Settings</a>
+            </nav>
+            <hr class="last-hr">
+            <button class="theme-button" onclick="Theme()">
+                        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-6 w-6 text-primary"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                    <p> Change Theme</p>
+            </button>    
+        </aside>  
+        <div class="content">
+            <div class="intro-flex">
+                <div class="intro">
+                    <h3>Projects</h3>
+                    <p>Manage and track all your projects in one place.</p>
+                </div>
+                <button class="new-project"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus h-4 w-4 mr-1"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>New Project</button>
+            </div>
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="project-flex">
+                        <div class="point"></div>
+                        <div class="project">Website Redesign</div>
+                        <button class="fullstop">...</button>
+                    </div>
+                    <div class="project-flex">
+                        <div class="progress">In Progress</div>
+                        <p class="date">Due Mar 15</p>
+                    </div>
+                    <div class="project-flex">
+                        <p>Progress</p>
+                        <p class="percent">72%</p>
+                    </div>
+                    <div class="project-bar-72"></div>
+                    <p class="members">5 team members</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-flex">
+                        <div class="project">Mobile App v2</div>
+                        <button class="fullstop">...</button>
+                    </div>
+                    <div class="project-flex">
+                        <div class="progress">In Progress</div>
+                        <p class="date">Due Apr 02</p>
+                    </div>
+                    <div class="project-flex">
+                        <p>Progress</p>
+                        <p class="percent">45%</p>
+                    </div>
+                    <div class="project-bar-45"></div>
+                    <p class="members">3 team members</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-flex">
+                        <div class="project">API Integration</div>
+                        <button class="fullstop">...</button>
+                    </div>
+                    <div class="project-flex">
+                        <div class="completed">Completed</div>
+                        <p class="date">Due Feb 20</p>
+                    </div>
+                    <div class="project-flex">
+                        <p>Progress</p>
+                        <p class="percent">100%</p>
+                    </div>
+                    <div class="project-bar-100"></div>
+                    <p class="members">2 team members</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-flex">
+                        <div class="project">Brand Guidelines</div>
+                        <button class="fullstop">...</button>
+                    </div>
+                    <div class="project-flex">
+                        <div class="planning">Planning</div>
+                        <p class="date">Due May 01</p>
+                    </div>
+                    <div class="project-flex">
+                        <p>Progress</p>
+                        <p class="percent">50%</p>
+                    </div>
+                    <div class="project-bar-50"></div>
+                    <p class="members">4 team members</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-flex">
+                        <div class="project">Dashboard Analytics</div>
+                        <button class="fullstop">...</button>
+                    </div>
+                    <div class="project-flex">
+                        <div class="progress">In Progress</div>
+                        <p class="date">Due Mar 28</p>
+                    </div>
+                    <div class="project-flex">
+                        <p>Progress</p>
+                        <p class="percent">60%</p>
+                    </div>
+                    <div class="project-bar-60"></div>
+                    <p class="members">3 team members</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-flex">
+                        <div class="project">User Research</div>
+                        <button class="fullstop">...</button>
+                    </div>
+                    <div class="project-flex">
+                        <div class="completed">Completed</div>
+                        <p class="date">Due Mar 15</p>
+                    </div>
+                    <div class="project-flex">
+                        <p>Progress</p>
+                        <p class="percent">100%</p>
+                    </div>
+                    <div class="project-bar-100"></div>
+                    <p class="members">2 team members</p>
+                </div>
+            </div>
+        </div>    
+    </div>    
+  </body>
+</html>      
