@@ -145,7 +145,7 @@ body {
 @media (min-width: 1280px) {
     .project-card {
         height: 250px;
-        width: 750px;
+        width: 100%;
     }
     .project-bar-100 {
         width:100%;
@@ -170,7 +170,7 @@ body {
 }
 @media (max-width:2550px) {
     .project-card {
-        width:700px;
+        width:100%;
     }
 }
 @media (max-width:2450px) {
@@ -180,22 +180,22 @@ body {
 }
 @media (max-width:2300px) {
     .project-card {
-        width:620px;
+        width:100%;
     }
 }
 @media (max-width:2200px) {
     .project-card {
-        width:550px;
+        width:100%;
     }
 }
 @media (max-width:1440px) {
     .project-card {
-        width:370px;
+        width:100%;
     }
 }
 @media (max-width:1040px) {
     .project-card {
-        width:350px;
+        width:100%;
     }
     .project-bar-100,.project-bar-45,.project-bar-50,.project-bar-60,.project-bar-72 {
         width:100%;
