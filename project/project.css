@@ -143,6 +143,9 @@ body {
     border-radius: 20px;
 }
 @media (min-width: 1280px) {
+    body {
+        font-size: 14px;
+    }
     .project-card {
         height: 250px;
         width: 100%;
@@ -164,36 +167,57 @@ body {
     }
 }
 @media (max-width:2605px) {
+     body {
+        font-size: 14px;
+    }
     .project-card {
         width:730px;
     }
 }
 @media (max-width:2550px) {
+     body {
+        font-size: 14px;
+    }
     .project-card {
         width:100%;
     }
 }
 @media (max-width:2450px) {
+     body {
+        font-size: 14px;
+    }
     .project-card {
         width:650px;
     }
 }
 @media (max-width:2300px) {
+     body {
+        font-size: 14px;
+    }
     .project-card {
         width:100%;
     }
 }
 @media (max-width:2200px) {
+     body {
+        font-size: 14px;
+    }
     .project-card {
         width:100%;
     }
 }
 @media (max-width:1440px) {
+     body {
+        font-size: 14px;
+    }
     .project-card {
         width:100%;
     }
 }
 @media (max-width:1040px) {
+     body {
+        font-size: 20px;
+    }
     .project-card {
         width:100%;
     }
@@ -206,6 +230,9 @@ body {
     }
 }
 @media (max-width:1040px) {
+     body {
+        font-size: 20px;
+    }
     .project-cards {
         display:flex;
         flex-direction: column;
