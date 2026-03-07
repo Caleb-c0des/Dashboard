@@ -22,6 +22,7 @@ body {
   height: 100vh;
   flex-shrink: 0;
   border: 1px solid #252a37;
+  position:fixed
 }
 .sidebar h2 {
     padding:1rem;
