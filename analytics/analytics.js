@@ -49,12 +49,12 @@ new Chart(document.getElementById('growth'), {
 new Chart(document.getElementById('hours'), {
   type: 'bar',
   data: {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','aug','sep','oct','nov','dec'],
     datasets: [{
-      data: [4500, 5100, 4800, 8000, 7100, 7500, 8400],
+      data: [4500, 5100, 4800, 8000, 7100, 7500, 8400,8500,8000,8700,9000,1000],
       borderColor: '#e8890c',        // orange line
       backgroundColor: '#f5a623',   // orange bars
-      barPercentage: 0.9,        // how wide each bar is (0-1)
+      barPercentage: 1,        // how wide each bar is (0-1)
       categoryPercentage: 0.5,   // how much space each group takes (0-1)
       borderRadius: 4,               // slightly rounded tops
       fill: true,

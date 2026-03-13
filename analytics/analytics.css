@@ -33,16 +33,26 @@
     border-radius: 12px;
     border: 1px solid #252a37;
     color:orange;
-    height: 100%;
+    height: 400px;
     width: 100%;
-    padding: 20px;
     background-color:#151923;
     transition: 0.4s;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
     margin-bottom: 30px;
 }
 path {
     background-color: orange;
+}
+@media (max-width:1050px) {
+    .card2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .revenue-card {
+        width:100%;
+        height:fit-content;
+     }
+     .growth-card {
+        width:100%;
+        height:fit-content;
+     }
 }
