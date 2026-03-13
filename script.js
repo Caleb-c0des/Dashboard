@@ -19,7 +19,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         datasets: [{
           label: 'Revenue',
-          data: [12000, 19000, 15000, 28000, 24000, 35000, 31000],
+          data: [3200, 5800, 4100, 7500, 6200, 9800, 8400],
           borderColor: '#ff8c00',
           backgroundColor: gradient,
           borderWidth: 2.5,

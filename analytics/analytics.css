@@ -1,0 +1,48 @@
+.card-head {
+    color:white;
+}
+:root {
+    --background:hsl( 220 20% 7%);
+    --primary:hsl(35 95% 55%);
+}
+.revenue-card {
+    border-radius: 12px;
+    border: 1px solid #252a37;
+    color:orange;
+    height: 300px;
+    width: 500px;
+    background-color:#151923;
+    transition: 0.4s;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:7px;
+}
+.growth-card {
+    background-color: #151b2e;
+    border-radius: 12px;
+    color:orange;
+    height: 300px;
+    width: 500px;
+    transition: 0.4s;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:7px;
+}
+.final-card {
+    margin-top: 30px;
+    border-radius: 12px;
+    border: 1px solid #252a37;
+    color:orange;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color:#151923;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 30px;
+}
+path {
+    background-color: orange;
+}
