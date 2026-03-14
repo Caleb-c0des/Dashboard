@@ -60,6 +60,9 @@
     align-items: center;
     justify-content: center;
 }
+ a  {
+    text-decoration: none;
+ }
 .message {
     display:flex;
     align-items: center;
