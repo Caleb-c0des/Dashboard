@@ -5,6 +5,7 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 .new-project {
     background-color: orange;
@@ -16,6 +17,10 @@ body {
     width: 130px;
     height: 40px;
     border: none;
+    transition: 0.4s;
+}
+.new-project:hover {
+    background-color: rgb(70, 46, 2);
 }
 .project-cards {
     display: grid;
@@ -25,7 +30,7 @@ body {
 }
 .project-card {
     border-radius: 12px;
-    border: 1px solid thistle;
+    border: 1px solid #252a37;
     color:orange;
     height: 210px;
     width: 320px;
@@ -33,6 +38,21 @@ body {
     background-color:#151923;
     transition: 0.4s;
     padding: 10px;
+}
+.sidebar-flex {
+    display:flex;
+    align-items: center;
+}
+.sidebar .logo {
+    background-color: orange;
+    width:25px;
+    height:25px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15px;
 }
 .project-flex {
     display: flex;

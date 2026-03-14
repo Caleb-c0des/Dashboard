@@ -1,6 +1,15 @@
 .card-head {
     color:white;
 }
+.sidebar-flex {
+    display:flex;
+}
+.sider-bar div {
+    background-color: orange;
+    width:50px;
+    height:40px;
+    border-radius: 7px;
+}
 :root {
     --background:hsl( 220 20% 7%);
     --primary:hsl(35 95% 55%);
@@ -33,7 +42,8 @@
     border-radius: 12px;
     border: 1px solid #252a37;
     color:orange;
-    height: 400px;
+    padding:5px;
+    height: fit-content;
     width: 100%;
     background-color:#151923;
     transition: 0.4s;
@@ -55,4 +65,14 @@ path {
         width:100%;
         height:fit-content;
      }
+}
+@media (max-width:500px) {
+    .revenue-card {
+        width:60%;
+        height:fit-content
+    }
+     .growth-card {
+        width:60%;
+        height:fit-content
+    }
 }

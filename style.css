@@ -73,6 +73,21 @@ nav a svg {
     display:flex;
     gap:30px;
 }
+.sidebar-flex {
+    display:flex;
+    align-items: center;
+}
+.sidebar .logo {
+    background-color: orange;
+    width:25px;
+    height:25px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15px;
+}
 .card {
     border-radius: 12px;
     border: 1px solid #252a37;
