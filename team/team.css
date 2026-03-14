@@ -83,7 +83,7 @@
         width:100%;
     }
 }
-@media (max-width:1000px) {
+@media (max-width:1100px) {
     .team-cards {
         display:flex;
         flex-direction: column;
