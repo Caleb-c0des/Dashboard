@@ -19,7 +19,7 @@
 }
 .notification-box {
     width: 100%;
-    height:100%;
+    height:1000px;
     border: 1px solid #252a37;
     background-color:#151923;
     border-radius: 7px;
@@ -79,4 +79,10 @@
 
 .issue {
     color:white;
+}
+@media (max-width:1100px) {
+    .notification-box {
+        height:100vh;
+        margin-bottom: 20px;
+    }
 }
