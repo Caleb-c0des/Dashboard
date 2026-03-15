@@ -3,12 +3,18 @@
 }
 .sidebar-flex {
     display:flex;
+    align-items: center;
 }
-.sider-bar div {
+.sidebar .logo {
     background-color: orange;
-    width:50px;
-    height:40px;
+    width:25px;
+    height:25px;
     border-radius: 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15px;
 }
 :root {
     --background:hsl( 220 20% 7%);

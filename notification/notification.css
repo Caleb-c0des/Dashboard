@@ -1,0 +1,82 @@
+.notify {
+    display:flex;
+    align-items: center;
+    width:170px;
+    padding:20px;
+    height:40px;
+    border: 1px solid #252a37;
+    background-color: #0e121b;
+    border-radius: 7px;
+    color:white;
+    justify-content:center;
+    gap:10px;
+    margin-top: 20px;
+    transition: 0.4s;
+    font-size: 14px;
+}
+.notify:hover {
+    background-color: #252a37;
+}
+.notification-box {
+    width: 100%;
+    height:1000px;
+    border: 1px solid #252a37;
+    background-color:#151923;
+    border-radius: 7px;
+    color:white;
+}
+.intro p {
+    font-size: 16px;
+}
+.Recent {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.notification-flex {
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+.state {
+    border-radius: 9999px;
+    background-color:#252a37 ;
+    font-size: 12px;
+    padding:7px 7px ;
+    display:flex;
+
+}
+.first-set {
+    background-color: rgba(255, 166, 0, 0.075);
+    height:fit-content;
+    width: 100%;
+    padding:20px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+.first-set:hover {
+    background-color: #252a37a1;
+}
+.second-set {
+    height:fit-content;
+    width: 100%;
+    padding:20px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+.second-set:hover {
+    background-color: #252a37a1;
+}
+.project {
+    margin-left: 25px;
+    color:#818898
+}
+.time {
+    margin-left: 25px;
+    color:#818898
+}
+
+.issue {
+    color:white;
+}
