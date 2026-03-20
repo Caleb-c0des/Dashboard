@@ -5,7 +5,7 @@
 }
 body {
     background: #040c1a;
-    font-family: sans-serif;
+    font-family: Iter,system-ui,sans-serif;
 }
 .dashboard {
   display: flex;
@@ -34,25 +34,49 @@ body {
 nav {
     display:flex;
     flex-direction: column;
-    gap:30px;
-    padding: 1rem;
+    padding:10px;
+    gap:5px;
+}
+.dashboard-nav {
+    background-color:rgba(255, 166, 0, 0.103) ;
+    color: orange;
+}
+.dashboard-nav:hover {
+    background-color:rgba(255, 166, 0, 0.103) ;
+    color: orange;
+}
+.dashboard-nav:hover svg {
+    background-color:rgba(255, 166, 0, 0.103) ;
+    color: orange;
 }
 nav a {
     text-decoration: none;
     color:#818898;
     transition: 0.4s;
     display: flex;
-    gap:5px;
+    z-index: 100;
     align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    gap:15px;
 }
 nav a:hover {
     color:orange;
-   
+    background-color: #252a37;
     border-radius: 10px;
-
+    z-index: 100;
+    color: white;
+}
+nav a:hover svg {
+    color :white;
 }
 nav a svg {
-    color :orange;
+    color :#818898;
+    transition: 0.4s;
+}
+.dashboard-svg {
+    color:orange;
 }
 .content {
   flex: 1;
@@ -264,15 +288,15 @@ table {
     height:300px;
 }
 .high {
-    background-color: #7c1d1d;
+    background-color: #fa07072a;
     color:red;
     border-radius: 20px;
-    width:50px;
+    width:70px;
     display: flex;
     justify-content: center;
 }
 .medium {
-    background-color: rgba(255, 255, 0, 0.212);
+    background-color: rgba(255, 255, 0, 0.116);
     color:yellow;
     border-radius: 20px;
     width:70px;
@@ -280,10 +304,11 @@ table {
     justify-content: center;
 }
 .low {
-    background-color: rgba(0, 128, 0, 0.171);
+    background-color: rgba(0, 250, 0, 0.103);
     color:green;
     border-radius: 20px;
-    width:45px;
+    width:70px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
 }
