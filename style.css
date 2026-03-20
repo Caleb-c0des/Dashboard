@@ -116,7 +116,7 @@ nav a svg {
     display:flex;
     align-items: center;
 }
-.sidebar .logo {
+.logo {
     background-color: orange;
     width:25px;
     height:25px;

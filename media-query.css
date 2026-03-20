@@ -63,9 +63,10 @@
         font-size: 23px;
     }
     .sidebar {
-        transform: translateX(-100%);
+        transform: translateX(-120%);
         z-index: 200;
         transition: 0.3s;
+        height: 100vh;
     }
     .sidebar.open {
         transform: translateX(0);
@@ -77,8 +78,40 @@
         background: rgba(0,0,0,0.5);
         z-index: 150;
     }
+    .top-nav-flex {
+        display: flex;
+        align-items: center;
+        gap:5px;
+    }
+    .top-nav-flex .logo {
+        width:40px;
+        height:40px;
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    .top-nav-flex h2 {
+        font-size: 23px;
+    }
     .overlay.open {
         display:block;
+    }
+    .top-nav {
+        width: 100vw;
+        background-color:#151923;
+        border: 1px solid #252a37;
+        height:70px;
+        padding: 40px;
+    }
+    .dashboard {
+        display: flex;
+        flex-direction: column;
     }
     .content {
         margin-left: 0;
@@ -104,6 +137,12 @@
         display: flex;
         gap: 30px;
         flex-direction: column;
+    }
+    .intro p {
+        font-size: 26px;
+    }
+    .intro h3 {
+        font-size: 30px;
     }
     .card {
         width: 100%;
