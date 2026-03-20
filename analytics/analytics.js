@@ -49,7 +49,7 @@ new Chart(document.getElementById('growth'), {
 new Chart(document.getElementById('hours'), {
   type: 'bar',
   data: {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','aug','sep','oct','nov','dec'],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','aug','sep','oct','nov','dec'    ],
     datasets: [{
       data: [4500, 5100, 4800, 8000, 7100, 7500, 8400,8500,8000,8700,9000,1000],
       borderColor: '#e8890c',        // orange line
