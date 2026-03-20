@@ -68,8 +68,89 @@
 }
 .notification-flex {
     display:flex;
+    margin-bottom: 23px;
+    justify-content: space-between;
+    align-items: center;
 }
 .notification-flex p {
     color:#818898;
     font-size: 15px;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #252a37;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    top: 4px;
+    background-color:#151923;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.on {
+    background-color: orange;
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.on:checked + .slider {
+    background-color: #252a37;
+}
+.on::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 4px;
+    top: 4px;
+    background-color:#151923;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+input:checked + .on {
+    background-color:#252a37 ;
+}
+/* when checked */
+input:checked + .slider {
+    background-color: orange;
+}
+input:checked + .on::before {
+    transform: translateX(-24px);
+}
+input:checked + .slider::before {
+    transform: translateX(24px);
+}
+@media (max-width:700px) {
+    .notification-box {
+        width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid #252a37;
+        background-color:#151923;
+        border-radius: 7px;
+        color:white;
+        padding: 30px;
+    }
 }
