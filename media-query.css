@@ -62,6 +62,44 @@
     body {
         font-size: 23px;
     }
+    .side-bar {
+        transform: translateX(-100px);
+        z-index: 200;
+        transition: 0.3s;
+    }
+    .side-bar .open {
+        transform: translateX(0);
+    }
+    .overlay {
+        display:none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 150;
+    }
+    .overlay .open {
+        display:block;
+    }
+    .content {
+        margin-left: 0;
+    }
+    .menu {
+        display:flex;
+        flex-direction: column;
+        gap:5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+    .menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+    }    
     .cards {
         display: flex;
         gap: 30px;

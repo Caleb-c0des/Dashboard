@@ -61,4 +61,14 @@ const ctx = document.getElementById('myChart').getContext('2d');
         }
       }
     });
-
+const menu =document.getElementById('menu')
+const sidebar =document.querySelector('.sidebar')
+const overlay =document.getElementById('overlay')
+menu.addEventListener('click', () => {
+ sidebar.classList.toggle('open');
+overlay.classList.toggle('open');
+});
+overlay.addEventListener('click', () => {
+sidebar.classList.remove('open');
+overlay.classList.remove('open');
+});

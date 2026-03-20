@@ -13,7 +13,22 @@ body {
   gap:1rem;
   color:white;
 }
-
+.menu {
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    background: none;
+    border: none;
+    padding:8px;
+    cursor: pointer;
+    display:none;
+}
+.menu span {
+    width:25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
 .sidebar {
   width: 250px;
   background-color:#151923;
