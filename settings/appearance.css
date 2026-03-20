@@ -97,3 +97,12 @@ select:focus {
     outline: none; 
     border-color: orange;
 }
+@media (max-width:1200px) {
+    select {
+        width:100%;
+    }
+    .appearance-box {
+        height: 100%;
+        font-size: 17px;
+    }
+}

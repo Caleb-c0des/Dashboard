@@ -153,3 +153,9 @@ button svg {
 button:hover {
     background-color: rgb(255, 179, 38);
 }
+@media (max-width:1200px) {
+    form {
+        display:flex;
+        flex-direction: column;
+    }
+}
