@@ -62,12 +62,12 @@
     body {
         font-size: 23px;
     }
-    .side-bar {
+    .sidebar {
         transform: translateX(-100px);
         z-index: 200;
         transition: 0.3s;
     }
-    .side-bar .open {
+    .side-bar.open {
         transform: translateX(0);
     }
     .overlay {
@@ -77,7 +77,7 @@
         background: rgba(0,0,0,0.5);
         z-index: 150;
     }
-    .overlay .open {
+    .overlay.open {
         display:block;
     }
     .content {
