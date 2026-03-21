@@ -46,11 +46,15 @@ body {
     margin-bottom: 20px;
     border: 1px solid #252a37;
 }
+.top-nav .logo,.leo{
+    display: none;
+}
 nav {
     display:flex;
     flex-direction: column;
     padding:10px;
     gap:5px;
+    margin-bottom: 100%;
 }
 .dashboard-nav {
     background-color:rgba(255, 166, 0, 0.103) ;
@@ -76,6 +80,7 @@ nav a {
     font-size: 14px;
     gap:15px;
 }
+
 nav a:hover {
     color:orange;
     background-color: #252a37;
@@ -116,7 +121,7 @@ nav a svg {
     display:flex;
     align-items: center;
 }
-.logo {
+.sidebar .logo {
     background-color: orange;
     width:25px;
     height:25px;
@@ -344,7 +349,25 @@ table {
     gap:10px;
 }
 .last-hr {
-     margin-top: 200px;
+     margin-top: 260px;
+}
+.log-out {
+    display: flex;
+    color: #818898;
+    gap: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    transition: 0.4s;
+}
+.log-out:hover {
+    color:orange;
+    background-color: #252a37;
+    border-radius: 10px;
+    z-index: 100;
+    color: white;
+}
+.log-out:hover svg{
+    color:white
 }
 .moon{
     display:none;
