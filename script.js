@@ -7,7 +7,9 @@ function Theme() {
     html.dataset.theme = "light";
   }
 }
-const ctx = document.getElementById('myChart').getContext('2d');
+const chartEl = document.getElementById('myChart');
+if (chartEl) {
+    const ctx = chartEl.getContext('2d');
 
     const gradient = ctx.createLinearGradient(0, 0, 0, 350);
     gradient.addColorStop(0, 'rgba(255, 140, 0, 0.35)');
@@ -61,6 +63,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
         }
       }
     });
+  }
 const menu =document.getElementById('menu')
 const sidebar =document.querySelector('.sidebar')
 const overlay =document.getElementById('overlay')

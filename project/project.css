@@ -240,6 +240,7 @@ body {
     }
     .project-card {
         width:100%;
+        height: fit-content;
     }
     .project-bar-100,.project-bar-45,.project-bar-50,.project-bar-60,.project-bar-72 {
         width:100%;
@@ -250,6 +251,7 @@ body {
     }
 }
 @media (max-width:1040px) {
+
      body {
         font-size: 20px;
     }
@@ -259,5 +261,124 @@ body {
     }
     .project-card {
         width:100%;
+    }
+}
+@media (min-width: 0px) and (max-width: 1000px){
+    body {
+        font-size: 23px;
+    }
+    .sidebar {
+        transform: translateX(-120%);
+        z-index: 200;
+        transition: 0.3s;
+        height: 100vh;
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    .overlay {
+        display:none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 150;
+    }
+    .top-nav-flex {
+        display: flex;
+        align-items: center;
+        gap:5px;
+    }
+    .top-nav-flex .logo {
+        width:40px;
+        height:40px;
+        margin-right: 20px;
+        background-color: orange;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 15px;
+    }
+    .leo {
+        display: block;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        line-height: 2;
+    }
+    .top-nav-flex h2 {
+        font-size: 23px;
+    }
+    .overlay.open {
+        display:block;
+    }
+    .top-nav {
+        width: 100vw;
+        background-color:#151923;
+        border: 1px solid #252a37;
+        height:70px;
+        padding: 10px;
+    }
+    .last-hr {
+        margin-top: 1200px;
+    }
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+        margin-left: 0;
+    }
+    .menu {
+        display:flex;
+        flex-direction: column;
+        gap:5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+    .menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+    }    
+    .cards {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .intro p {
+        font-size: 26px;
+    }
+    .intro h3 {
+        font-size: 30px;
+    }
+    .project-card {
+        width: 100%;
+    }
+    .last-cards {
+        flex-direction: column;
+    }
+    .card2 {
+        flex-direction: column;
+    }
+    .big-card {
+        width: 100%;
+    }
+    .small-card {
+        width: 100%;
+    }
+    .last-card {
+        width: 100%;
     }
 }
