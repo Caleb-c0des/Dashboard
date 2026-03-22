@@ -22,6 +22,12 @@ body {
 .new-project:hover {
     background-color: rgb(70, 46, 2);
 }
+.project-flex .fullstop {
+    color:#818898;
+    background: none;
+    border: none;
+}
+
 .project-cards {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -30,8 +36,8 @@ body {
 }
 .project-card {
     border-radius: 12px;
-    border: 1px solid #252a37;
-    color:orange;
+    border: 2px solid #252a37;
+    color:rgb(255, 136, 0);
     height: 210px;
     width: 320px;
     padding: 20px;
@@ -66,7 +72,7 @@ body {
     border-radius: 100%;
     background-color: yellow;
 }
-.project-flex .fullstop {
+.project-flex .stop {
     background: none;
     border: none;
     font-size: large;
@@ -267,6 +273,9 @@ body {
     body {
         font-size: 23px;
     }
+    .intro h3 {
+        font-size: 70px;
+    }
     .sidebar {
         transform: translateX(-120%);
         z-index: 200;
@@ -287,6 +296,28 @@ body {
         display: flex;
         align-items: center;
         gap:5px;
+    }
+    .new-project {
+        background-color: orange;
+        color:white;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:5px;
+        width: 500px;
+        height: 100px;
+        border: none;
+        transition: 0.4s;
+        font-size:30px;
+    }
+    .new-project svg {
+        width: 70px;
+        height:70px;
+    }
+    .intro-flex {
+        display: flex;
+        gap:2px;
     }
     .top-nav-flex .logo {
         width:40px;
@@ -331,9 +362,16 @@ body {
     .dashboard {
         display: flex;
         flex-direction: column;
+        padding: 30px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .content {
         margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
     }
     .menu {
         display:flex;
@@ -356,15 +394,26 @@ body {
         display: flex;
         gap: 30px;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .intro p {
-        font-size: 26px;
+        font-size: 39px;
+        margin-left: 1px;
+        margin-bottom: 1px;
     }
     .intro h3 {
         font-size: 30px;
     }
     .project-card {
-        width: 100%;
+        width: 90vw;
+        height:53vw;
+        margin-left: auto;
+        padding: 70px;
+        margin-right: auto;
+    }
+    .date {
+        font-size: 30px;
     }
     .last-cards {
         flex-direction: column;
@@ -380,5 +429,49 @@ body {
     }
     .last-card {
         width: 100%;
+    }
+    .project-flex {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .progress {
+        font-size: 40px;
+        width: fit-content;
+        height: fit-content;
+        border-color: #252a37;
+    }
+    .planning {
+        font-size: 40px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .project-flex p {
+        font-size: 40px;
+    }
+    .project-flex .percent {
+        font-size:40px;
+    }
+    .completed {
+        font-size: 40px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .project {
+        font-size: 40px;
+    }
+    .project-flex .fullstop {
+        font-size: 100px;
+        color:#818898;
+        background: none;
+        border: none;
+    }
+    .point {
+        width: 30px;
+        height: 30px;
+    }
+    .members {
+        font-size: 40px;
     }
 }

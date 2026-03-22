@@ -99,6 +99,25 @@
         justify-content: center;
         margin-left: 15px;
         font-size: 50px;
+        
+    }
+    .sidebar .logo {
+        width:55px;
+        height:55px;
+        background-color: orange;
+        border-radius: 9px;
+    }
+    .logo {
+        width:70px;
+        height:70px;
+        margin-right: 20px;
+        background-color: orange;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 15px;
         margin-top: 20pxs;
     }
     .leo {
@@ -152,17 +171,28 @@
     .menu {
         display:flex;
         flex-direction: column;
-        gap:2px;
+        gap:4px;
         background: none;
         border: none;
         cursor: pointer;
         padding: 8px;
         margin-right: 25px;
     }
+    nav svg {
+        width:75px;
+        height:50px;
+    }
+    .hide {
+        display:none;
+    }
+    .low {
+        width:70px;
+        padding: 3px;
+    }
     .menu span {
         display: block;
-        width: 26px;
-        height: 4px;
+        width: 29px;
+        height: 6px;
         background-color: #818898;
         border-radius: 5px;
         transition: 0.3s;
@@ -173,16 +203,17 @@
         flex-direction: column;
         align-items: center;
     }
-    .intro p {
+    .intro1 p {
         font-size: 44px;
         margin-left: 35px;
         margin-bottom: 70px;
+        color: #818898;
     }
     .card-flex svg {
         width: 70px;
         height: 70px;
     }
-    .intro h1 {
+    .intro1 h1 {
         font-size: 70px;
         margin-left: 35px;
         margin-bottom: 10px;
