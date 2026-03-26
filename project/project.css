@@ -1,5 +1,6 @@
 body {
     font-size: 14px;
+    font-family: Inter,system-ui,sans-serif;
 }
 .intro-flex {
     display:flex;
@@ -38,11 +39,9 @@ body {
     border-radius: 12px;
     border: 2px solid #252a37;
     color:rgb(255, 136, 0);
-    height: 210px;
+    height: 200px;
     width: 320px;
-    padding: 20px;
     background-color:#151923;
-    transition: 0.4s;
     padding: 10px;
 }
 .sidebar-flex {
@@ -107,18 +106,18 @@ body {
 .project-bar-72 {
     width:300px;
     background:linear-gradient( to right,orange 72%, hsl(220 15% 15%) 28%);
-    height:8px;
+    height:6px;
     border-radius: 20px;
 }
 .project-bar-45 {
     width:300px;
     background:linear-gradient( to right,orange 45%, hsl(220 15% 15%) 55%);
-    height:8px;
+    height:6px;
     border-radius: 20px;
 }
 .members {
     margin-top: 20px;
-    color:rgba(255, 255, 255, 0.267);
+    color:rgba(255, 255, 255, 0.671);
 }
 .completed {
     width:100px;
@@ -138,7 +137,7 @@ body {
 .project-bar-100 {
     width:300px;
     background:orange;
-    height:8px;
+    height:6px;
     border-radius: 20px;
 }
 .planning {
@@ -159,16 +158,16 @@ body {
 .project-bar-50 {
     width:300px;
     background:linear-gradient( to right, orange 50%, hsl(220 15% 15%) 50% );
-    height:8px;
+    height:6px;
     border-radius: 20px;
 }
 .project-bar-60 {
     width:300px;
     background:linear-gradient( to right, orange 60%, hsl(220 15% 15%) 40% );
-    height:8px;
+    height:6px;
     border-radius: 20px;
 }
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
     body {
         font-size: 14px;
     }
@@ -192,39 +191,25 @@ body {
         width:100%;
     }
 }
-@media (max-width:2605px) {
+@media (min-width:2605px) {
      body {
         font-size: 14px;
     }
     .project-card {
         width:730px;
+        height: fit-content;
     }
 }
-@media (max-width:2550px) {
-     body {
-        font-size: 14px;
-    }
-    .project-card {
-        width:100%;
-    }
-}
-@media (max-width:2450px) {
-     body {
-        font-size: 14px;
-    }
-    .project-card {
-        width:650px;
-    }
-}
+
 @media (max-width:2300px) {
      body {
         font-size: 14px;
     }
     .project-card {
-        width:100%;
+        width:fit-content;
     }
 }
-@media (max-width:2200px) {
+@media (min-width:1950px) {
      body {
         font-size: 14px;
     }
@@ -297,16 +282,31 @@ body {
         align-items: center;
         gap:5px;
     }
+    .project {
+        font-weight: 600;
+    }
+    .completed {
+        font-weight: 600;
+    }
+    .planning {
+        font-weight: 600;
+    }
+    .progress {
+        font-weight: 600;
+    }
+    .project-flex p {
+        font-weight: 600;
+    }
     .new-project {
         background-color: orange;
         color:white;
-        border-radius: 7px;
+        border-radius:10px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap:5px;
         width: 500px;
-        height: 100px;
+        height: 130px;
         border: none;
         transition: 0.4s;
         font-size:30px;
@@ -317,7 +317,7 @@ body {
     }
     .intro-flex {
         display: flex;
-        gap:2px;
+        margin-top: 20px;
     }
     .top-nav-flex .logo {
         width:40px;
@@ -330,6 +330,10 @@ body {
         text-align: center;
         justify-content: center;
         margin-left: 15px;
+    }
+    .intro h1 {
+        font-size: 70px;
+        margin-bottom: 5px;
     }
     .leo {
         display: block;
@@ -398,9 +402,11 @@ body {
         align-items: center;
     }
     .intro p {
-        font-size: 39px;
+        font-size: 49px;
         margin-left: 1px;
+        margin-top: 30px;
         margin-bottom: 1px;
+        color:rgba(255, 255, 255, 0.808);
     }
     .intro h3 {
         font-size: 30px;
@@ -410,7 +416,7 @@ body {
         height:53vw;
         margin-left: auto;
         padding: 70px;
-        margin-right: auto;
+        z: auto;
     }
     .date {
         font-size: 30px;
