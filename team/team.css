@@ -9,6 +9,25 @@
     flex-direction: column;
     align-items: center;
 }
+.card-head {
+    color:white;
+}
+.sidebar-flex {
+    display:flex;
+    align-items: center;
+}
+
+.sidebar .logo {
+    background-color: orange;
+    width:25px;
+    height:25px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15px;
+}
 .sidebar-flex {
     display:flex;
     align-items: center;
@@ -52,7 +71,8 @@
 .online {
     background-color: orange;
     margin-top: 10px;
-    width:75px;
+    width:fit-content;
+    padding: 20px;
     height:25px;
     border-radius: 20px;
     display: flex;
@@ -86,7 +106,7 @@
         width:100%;
     }
 }
-@media (max-width:1100px) {
+@media (max-width:1200px) {
     .team-cards {
         display:flex;
         flex-direction: column;
@@ -95,7 +115,21 @@
     .team-cards {
         width:100%;
     }
-    body {
+    .intro-flex .intro p {
+        font-size: 40px;
+    }
+    .intro-flex h3 {
+        font-size: 50px;
+    }
+    .team-job {
         font-size: 20px;
+    }
+    .team-card {
+        height:fit-content;
+    }
+    .message {
+        width: 90vw;
+        height: 70px;
+        font-size: 30px;
     }
 }

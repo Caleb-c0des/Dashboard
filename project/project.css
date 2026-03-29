@@ -167,7 +167,7 @@ body {
     height:6px;
     border-radius: 20px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1480px) {
     body {
         font-size: 14px;
     }
@@ -225,9 +225,12 @@ body {
         width:100%;
     }
 }
-@media (max-width:1040px) {
+@media (max-width:1150px) {
      body {
         font-size: 20px;
+    }
+    .intro-flex .intro p {
+        font-size: 30px;
     }
     .project-card {
         width:100%;
@@ -252,233 +255,12 @@ body {
     }
     .project-card {
         width:100%;
+        height:fit-content
     }
 }
-@media (min-width: 0px) and (max-width: 1000px){
-    body {
-        font-size: 23px;
-    }
-    .intro h3 {
-        font-size: 70px;
-    }
-    .sidebar {
-        transform: translateX(-120%);
-        z-index: 200;
-        transition: 0.3s;
-        height: 100vh;
-    }
-    .sidebar.open {
-        transform: translateX(0);
-    }
-    .overlay {
-        display:none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.5);
-        z-index: 150;
-    }
-    .top-nav-flex {
-        display: flex;
-        align-items: center;
-        gap:5px;
-    }
-    .project {
-        font-weight: 600;
-    }
-    .completed {
-        font-weight: 600;
-    }
-    .planning {
-        font-weight: 600;
-    }
-    .progress {
-        font-weight: 600;
-    }
-    .project-flex p {
-        font-weight: 600;
-    }
-    .new-project {
-        background-color: orange;
-        color:white;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap:5px;
-        width: 570px;
-        height: 100px;
-        border: none;
-        transition: 0.4s;
-        font-size:30px;
-    }
-    .new-project svg {
-        width: 70px;
-        height:70px;
-    }
-    .intro-flex {
-        display: flex;
-        gap:4px;
-        margin-top: 20px;
-    }
-    .top-nav-flex .logo {
-        width:40px;
-        height:40px;
-        margin-right: 20px;
-        background-color: orange;
-        border-radius: 7px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-left: 15px;
-    }
-    .intro h1 {
-        font-size: 70px;
-        margin-bottom: 5px;
-    }
-    .leo {
-        display: block;
-    }
-    nav a{
-        font-size: 20px;
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        line-height: 2;
-    }
-    .top-nav-flex h2 {
-        font-size: 23px;
-    }
-    .overlay.open {
-        display:block;
-    }
-    .top-nav {
-        width: 100vw;
-        background-color:#151923;
-        border: 1px solid #252a37;
-        height:70px;
-        padding: 10px;
-    }
-    .last-hr {
-        margin-top: 1200px;
-    }
-    .dashboard {
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .content {
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-    }
-    .menu {
-        display:flex;
-        flex-direction: column;
-        gap:5px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 8px;
-    }
-    .menu span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        border-radius: 5px;
-        transition: 0.3s;
-    }    
-    .cards {
-        display: flex;
-        gap: 30px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .intro p {
-        font-size: 49px;
-        margin-left: 1px;
-        margin-top: 30px;
-        margin-bottom: 1px;
-        color:rgba(255, 255, 255, 0.808);
-    }
-    .intro h3 {
-        font-size: 30px;
-    }
-    .project-card {
-        width: 90vw;
-        height:53vw;
-        margin-left: auto;
-        padding: 70px;
-        margin-right: auto;
-    }
-    .date {
-        font-size: 30px;
-    }
-    .last-cards {
-        flex-direction: column;
-    }
-    .card2 {
-        flex-direction: column;
-    }
-    .big-card {
-        width: 100%;
-    }
-    .small-card {
-        width: 100%;
-    }
-    .last-card {
-        width: 100%;
-    }
-    .project-flex {
-        display: flex;
-        margin-bottom: 20px;
-        align-items: center;
-    }
 
-    .progress {
-        font-size: 40px;
-        width: fit-content;
-        height: fit-content;
-        border-color: #252a37;
-    }
-    .planning {
-        font-size: 40px;
-        width: fit-content;
-        height: fit-content;
-    }
-    .project-flex p {
-        font-size: 40px;
-    }
-    .project-flex .percent {
-        font-size:40px;
-    }
-    .completed {
-        font-size: 40px;
-        width: fit-content;
-        height: fit-content;
-    }
-    .project {
-        font-size: 40px;
-    }
-    .project-flex .fullstop {
-        font-size: 100px;
-        color:#818898;
-        background: none;
-        border: none;
-    }
-    .point {
-        width: 30px;
-        height: 30px;
-    }
-    .members {
-        font-size: 40px;
+@media (min-width:1900px) {
+    .project-bar-100,.project-bar-45,.project-bar-50,.project-bar-60,.project-bar-72 {
+        width:100%;
     }
 }

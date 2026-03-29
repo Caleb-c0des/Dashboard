@@ -25,7 +25,7 @@
     border: 1px solid #252a37;
     color:orange;
     height: 300px;
-    width: 500px;
+    width: 50%;
     background-color:#151923;
     transition: 0.4s;
     padding-left:5px;
@@ -37,7 +37,7 @@
     border-radius: 12px;
     color:orange;
     height: 300px;
-    width: 500px;
+    width: 50%;
     transition: 0.4s;
     padding-left:5px;
     padding-right:5px;
@@ -62,6 +62,30 @@ path {
     .card2 {
         display: flex;
         flex-direction: column;
+        width:100%;
+    }
+        .revenue-card {
+        border-radius: 12px;
+        border: 1px solid #252a37;
+        color:orange;
+        height: 300px;
+        width: 50%;
+        background-color:#151923;
+        transition: 0.4s;
+        padding-left:5px;
+        padding-right:5px;
+        padding-top:7px;
+    }
+    .growth-card {
+        background-color: #151b2e;
+        border-radius: 12px;
+        color:orange;
+        height: 300px;
+        width: 50%;
+        transition: 0.4s;
+        padding-left:5px;
+        padding-right:5px;
+        padding-top:7px;
     }
     .revenue-card {
         width:100%;
@@ -80,5 +104,30 @@ path {
      .growth-card {
         width:60%;
         height:fit-content
+    }
+}
+@media (min-width:2000px) {
+    .revenue-card {
+        width:50%;
+    }
+    .growth-card {
+        width:50%;
+    }
+    .final-card {
+        width: 100%;
+    }
+}
+@media (min-width:0px) and (max-width:1250px) {
+    .revenue-card {
+        width:100%;
+    }
+    .growth-card {
+        width:100%;
+    }
+    body {
+        font-size: 30px;
+    }
+    .intro p {
+        font-size: 30px;
     }
 }

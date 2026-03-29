@@ -246,7 +246,7 @@ nav a svg {
     border: 1px solid #252a37;
     color:orange;
     height: 400px;
-    width: 1040px;
+    width: 100%;
     padding: 20px;
     background-color:#151923;
     transition: 0.4s;
