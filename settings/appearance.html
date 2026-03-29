@@ -4,13 +4,26 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./appearance.css">
-    <link rel="stylesheet" href="./media-query.css">
+    <link rel="stylesheet" href="../media-query.css">
     <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
     <link rel="icon" type="img/png" href="../images/fca6231c-e4df-42a8-8406-04b41808a6d1.png">
   </head>
   <body>
+   <div class="overlay" class="overlay"></div>
     <div class="dashboard">
-        <aside class="sidebar">
+      <div class="top nav">
+         <div class="top-nav-flex">
+          <button id="menu" class="menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+          <div class="sidebar-flex">
+              <div class="logo">L</div>
+              <h2 class="leo">Leonardo</h2>
+          </div>
+         </div>
+         <aside class="sidebar">
             <div class="sidebar-flex">
                 <div class="logo">L</div>
                 <h2>Leonardo</h2>
@@ -37,7 +50,8 @@
                  </a>
             </nav>
             <hr class="last-hr">    
-        </aside>  
+         </aside> 
+        </div> 
         <div class="content">
          <div class="intro">
             <h3>Settings</h3>
@@ -71,5 +85,6 @@
         </div> 
     </div>
     
-  </body>     
+  </body>  
+  <script src="../script.js"></script> 
 </html>     

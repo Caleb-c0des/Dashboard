@@ -143,7 +143,7 @@ input:checked + .on::before {
 input:checked + .slider::before {
     transform: translateX(24px);
 }
-@media (max-width:700px) {
+@media (max-width:1200px) {
     .notification-box {
         width: 100%;
         margin-bottom: 30px;
@@ -152,5 +152,35 @@ input:checked + .slider::before {
         border-radius: 7px;
         color:white;
         padding: 30px;
+    }
+    .message p {
+        font-size: 30px;
+    }
+    .message h2 {
+        font-size: 30px;
+    }
+    .nav-bar a:nth-child(3) {
+        margin-left: 15px;
+        background-color: #0e121b;
+        width:fit-content;
+        height:40px;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        border-radius: 9px;
+        justify-content: center;
+        color:white;
+        padding: 8px;
+    }
+    .nav-bar {
+        width:fit-content;
+        height: 60px;
+        align-items: center;
+        border-radius: 9px;
+        display:flex;
+        margin-bottom: 30px;
+        padding: 5px;
+        color:#818898;
+        background-color: #212531;
     }
 }

@@ -158,4 +158,49 @@ button:hover {
         display:flex;
         flex-direction: column;
     }
+    .intro p {
+        font-size: 30px;
+    }
+    .nav-bar a:nth-child(1) {
+        background-color: #0e121b;
+        width:100px;
+        height:70px;
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        border-radius: 9px;
+        justify-content: center;
+        color:white;
+    }
+    .nav-bar {
+        background-color: #212531;
+        color:#818898;
+        width:fit-content;
+        align-items: center;
+        border-radius: 9px;
+        display:flex;
+        margin-bottom: 30px;
+        padding: 8px;
+    }
+    input::placeholder {
+        font-size: 30px;
+    }
+    textarea::placeholder {
+        color:white;
+        opacity: 1;
+        font-size: 30px;
+    }
+    input {
+        height: 70px;
+    }
+    .photo-change {
+        font-size: 30px;
+        width: 300px;
+        padding: 5px;
+        height: 50px;
+    }
+    .photo-change svg {
+        width: 30px;
+        height: 30px;
+    }
 }
