@@ -10,6 +10,9 @@
     color:white;
     padding: 8px;
 }
+.logo {
+    display:none;
+}
 .nav-bar a:nth-child(1) {
     background: none;
     width:75px;
@@ -19,7 +22,7 @@
     margin-left: 5px;
     border-radius: 9px;
     justify-content: center;
-    color:white;
+    color:#818898;
 }
 .nav-bar a {
     color:#818898;
